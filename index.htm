@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>英単語 接辞分解ツール</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>英単語 接辞分解ツール</h1>
 
+  <form id="affix-form">
+    <label for="word">分解したい英単語：</label>
+    <input type="text" id="word" name="word" placeholder="例: unbelievable" required>
+    <button type="submit">解析する</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="js/affixSplitter.js"></script>
+</body>
+</html>
