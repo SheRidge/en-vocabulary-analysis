@@ -28,8 +28,8 @@ async function loadAffixData() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  loadAffixData();
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadAffixData();
   const form = document.getElementById('affix-form');
   form.addEventListener('submit', onFormSubmit);
 });
